@@ -22,7 +22,7 @@ oauth.init_app(app)
 github = oauth.remote_app(
     'github',
     consumer_key=os.environ['GITHUB_CLIENT_ID'], #the webapp's "username" for github OAuth
-    consumer_secret=os.environ['GITHUB_CLIENT_SECRET'], J#the webapps "password" for github OAuth
+    consumer_secret=os.environ['GITHUB_CLIENT_SECRET']#the webapps "password" for github OAuth
     request_token_params={'scope': 'user:email'}, #request read-only access to the user's email.  For a list of possible scopes, see developer.github.com/apps/building-oauth-apps/scopes-for-oauth-apps
     base_url='https://api.github.com/',
     request_token_url=None,
