@@ -64,7 +64,7 @@ def authorized():
             except:
             #clear the session and give error message
             session.clear()
-            message='Unable to login. Please try again later '
+            message = 'Unable to login. Please try again later'
     return render_template('message.html', message=message)
 
 
